@@ -1,4 +1,5 @@
-import { Button, Container } from "@mui/material";
+import { Button } from "@mui/material";
+import Hero from "./Hero";
 
 const Header = () => {
   const marginLeft = "2rem";
@@ -7,11 +8,12 @@ const Header = () => {
       style={{
         backgroundImage: "url(./images/desktop/image-header.jpg)",
         backgroundPosition: "center",
-        backgroundSize: "contain",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
         height: "90vh",
       }}
     >
-      <Container sx={{ color: "white" }}>
+      <div style={{ color: "white" }}>
         <ul
           style={{
             alignItems: "center",
@@ -47,7 +49,8 @@ const Header = () => {
             </li>
           </div>
         </ul>
-      </Container>
+      </div>
+      <Hero />
     </div>
   );
 };
