@@ -56,8 +56,12 @@ const Info = () => {
             alt="cherry"
             style={{ width: "100%" }}
           />
-          <h2>{infoText[2].heading}</h2>
-          <p>{infoText[2].description}</p>
+          <div style={{ margin: "0 10rem", transform: "translateY(-15rem)" }}>
+            <h2 style={{ margin: "2rem 0" }}>{infoText[2].heading}</h2>
+            <p style={{ lineHeight: 1.8, margin: "0 8rem" }}>
+              {infoText[2].description}
+            </p>
+          </div>
         </div>
 
         <div>
@@ -66,8 +70,12 @@ const Info = () => {
             alt="small orange"
             style={{ width: "100%" }}
           />
-          <h3>{infoText[3].heading}</h3>
-          <p>{infoText[3].description}</p>
+          <div style={{ margin: "0 10rem", transform: "translateY(-15rem)" }}>
+            <h3 style={{ margin: "2rem 0" }}>{infoText[3].heading}</h3>
+            <p style={{ lineHeight: 1.8, margin: "0 8rem" }}>
+              {infoText[3].description}
+            </p>
+          </div>
         </div>
       </div>
     </div>
